@@ -1,7 +1,10 @@
-data "aws_caller_identity" "current" {}
+data "aws_caller_identity" "current" {
+  provider = "aws.this"
+  }
 
 data "aws_vpc" "this_vpc" {
-  provider = "aws.this"
+  provider = "aws.this"  provider = "aws.this"
+
   id       = "${var.this_vpc_id}"
 }
 
