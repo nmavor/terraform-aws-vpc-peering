@@ -1,6 +1,6 @@
 data "aws_caller_identity" "current" {
   provider = "aws.this"
-  }
+}
 
 data "aws_vpc" "this_vpc" {
   provider = "aws.this"  provider = "aws.this"
